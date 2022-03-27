@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    </head>
+<!-- your HTML file: -->
+<body>
+    <h1>
+      THE TITLE OF YOUR WEBPAGE
+    </h1>
+
+    <button onclick="alert('Hello World')">Click Me</button>
+
+    <div id="container"></div>
+    <script>
+        const content = document.createElement('div');
+        content.classList.add('content');
+        content.textContent = 'This is the glorious text-content!';
+        container.appendChild(content);
+
+        const paragraph = document.createElement('p')
+        paragraph.style.color = 'red';   
+        paragraph.classList.add('paragraph');
+        paragraph.textContent = 'Hey, I\'m red';
+        container.appendChild(paragraph);
+
+        const header3 = document.createElement('h3')
+        header3.style.color = 'blue';   
+        header3.classList.add('header3');
+        header3.textContent = "I'm a blue H3!";
+        container.appendChild(header3);
+
+        const content2 = document.createElement('div')
+        content2.classList.add('content2');
+
+        const header1 = document.createElement('h1')
+        header1.classList.add('header1');
+        header1.textContent = "I'm in a div!";
+        content2.appendChild(header1);
+
+        const paragraph2 = document.createElement('p')
+        paragraph2.classList.add('paragraph2');
+        paragraph2.textContent = 'Me too!';
+        content2.appendChild(paragraph2);
+
+        container.appendChild(content2);
+
+        
+        
+    </script>
+  </body>
+</html>
